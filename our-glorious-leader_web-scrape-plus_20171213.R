@@ -1,4 +1,4 @@
-#'  Web scraping test
+#' Our glorious leader
 
 install.packages("devtools")
 devtools::install_github("sellorm/rsay")
@@ -24,7 +24,7 @@ read_html("https://en.wikipedia.org/wiki/List_of_Kim_Jong-il%27s_titles") %>%
   dplyr::select(title = English) %>% 
   distinct() %>%
   mutate(title = paste("Mark is our", title)) %>% 
-  sample_n(5) %>%
+  sample_n(10) %>%
   mutate(dummy = walk(title, speak))
   
 
