@@ -9,7 +9,7 @@ library(rsay)
 
 #' 1. grab page into R
 #' 
-#' 2. get second table node
+#' 2. get table node
 #' 
 #' 3. use html_table() to parse into df
 #' 
