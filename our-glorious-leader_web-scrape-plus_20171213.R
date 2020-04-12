@@ -1,7 +1,7 @@
 #' Our glorious leader
 
-install.packages("devtools")
-devtools::install_github("sellorm/rsay")
+# install.packages("devtools")
+# devtools::install_github("sellorm/rsay")
 
 library(tidyverse)
 library(rvest)
