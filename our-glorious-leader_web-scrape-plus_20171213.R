@@ -19,7 +19,7 @@ set.seed(999)
 
 read_html("https://en.wikipedia.org/wiki/List_of_Kim_Jong-il%27s_titles") %>% 
   html_nodes("table") %>%
-  .[[1]] %>%
+  .[[2]] %>%
   html_table(fill = TRUE) %>% 
   dplyr::select(title = English) %>% 
   distinct() %>%
